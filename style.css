@@ -1,0 +1,152 @@
+body {
+    margin: 0; /* Propriedade de margem */
+    padding: 0;
+    font-family: sans-serif; /* Propriedade par definir a fonte do texto*/ 
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex; /* Propriedade para "quebrar a estrutura de organização do HTML */
+}
+
+.container .esquerda {
+    width: 50%;
+    height: 100%;
+    background-color: #BA68C8;
+    display: flex;
+    justify-content: center; /* Propriedade de alinhamento dos itens no eixo principal */
+    align-items: center;    /* Propriedade de alinhamento dos itens no eixo transversal */
+}
+
+.container .direita {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .direita .card {
+    width: 500px;
+    height: 65%;
+    /*border: solid; /*Propriedade de adicionar borda(solido, tracejado ou pontilhado) em um elemento
+    border-width: 20px; /* Propriedade defini a largura da borda
+    border-radius: 20px;*/
+}
+
+.container .direita .card .topo {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .direita .card .topo h1 {
+    color: #BA68C8;
+}
+
+.container .direita .card .meio {
+    width: 100%;
+    height: 45%;
+}
+
+.container .direita .card .fim {
+    width: 100%;
+    height: 35%;
+}
+
+.container .direita .card .meio .input {
+    display: flex;
+    flex-direction: column; /* Propriedade para definir a direção em que os itens estão organizados, ou seja, em linha ou em coluna*/
+    width: 100%;
+    gap: 5px; /* Propriedade para definir o espaço entre itens em layouts de grade*/
+    margin-bottom: 20px; /* Propriedade para definir o espaçamento exterior na parte inferior de um elemento, afastando-o de outros elementos que vêm logo após*/
+}
+
+.container .direita .card .meio .input label {
+    font-size: 18px; /*Propriedade para definir o tamanho da letra do texto */
+    font-weight: bold; /* Propriedade para definir a espessura ou o "peso" da fonte, determinando se o texto ficará mais claro(normal) ou mais escuro(negrito)*/
+    color: #686868; /*Propriedade para definir a cor do texto */
+}
+
+.container .direita .card .meio .input input {
+    width: 100%;
+    height: 40px;
+    border: none; /*Propriedade para adicionar um contorno(borda) ao redor de um elemento HTML, permitindo personalizar sua espessura, estilo e cor*/
+    background-color: #f0f0f0;
+    border-radius: 5px; /*Propriedade usada para arredondar os quantos de um elemento*/
+    padding-left: 10px; /*Propriedade para definir o espaço livre no interior de um elemento entre a borda e o texto*/
+}
+
+.container .direita .card .meio .opcoes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /*Separação iguais entre as divs*/
+}
+
+.container .direita .card .meio .opcoes a {
+    text-decoration: none; /*Propriedade para adicionar efeitos decoraticos a um texto*/
+    color: #ee82ee;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.container .direita .card .fim button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #BA68C8;
+    border-radius: 7px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;/*Propriedade para que o cursor mude quando passe em cima do elemento*/
+    transition: all 0.3s ease-in-out; /*Propriedade que controla o tempo de transição do cursor quando passa em cima do elemento*/
+}
+
+.container .direita .card .fim button:hover { /*é uma subclasse utilizada para aplicar estilos visuais a um botão*/
+    background-color: #ffffff;
+    border: 1px solid #ba68c8;
+    color: #BA68C8;
+}
+
+.container .direita .card .fim a {
+    text-decoration: underline;
+    color: #BA68C8;
+    font-weight: 600;
+}
+
+.container .direita .card .fim .social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .direita .card .fim .social p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #BA68C8;
+}
+
+.container .direita .card .fim .social .icons {
+    display: flex;
+    gap: 10px;
+}
+
+.container .direita .card .fim .social .icons i {
+    font-size: 30px; /*Como os icones funcionam como se fossem textos, logo podemos utilizar as propriedades de texto neles*/
+}
+
+#facebook { /*Alterando a cor dos icones*/
+    color: #BA68C8;
+}
+
+#google {
+    color: #BA68C8;
+}
+
+#linkedin {
+    color: #BA68C8;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!--- Idioma do site --->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--- Link para o arquivo do CSS -->
+    <!---Link para usar os icones---><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="container"> <!-- Div é uma forma de organização utilizada para estruturar a pagina HTML -->
+        <div class="esquerda">
+            <img src="/images/mobile-login-animate.svg" alt="Figura animada" width="800px">
+        </div>
+
+        <div class="direita">
+            <div class="card">
+                <div class="topo">
+                    <h1> LOGIN </h1>
+                </div>
+
+                <div class="meio">
+                    <div class="input">
+                        <label for="user"> Username </label>
+                        <input type="text" id="user" placeholder="@mail.com">
+                    </div>
+
+                    <div class="input">
+                        <label for="pass"> Password </label>
+                        <input type="password" id="pass" placeholder="•••••••••">
+                    </div>
+
+                    <div class="opcoes">
+                        <div class="check">
+                            <input type="checkbox" id="lembrar"> <!--Item de check-->
+                            <label for="lembrar">Lembrar-me</label>
+                        </div>
+
+                        <a href="">Esqueceu a senha?</a>
+                    </div>
+                </div>
+
+                <div class="fim">
+                    <button>ENTRAR</button>
+                    <p>Ainda não possui conta? <a href="">Inscrever-se</a></p>
+
+                    <div class="social">
+                        <p>Logar com</p>
+
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook" id="facebook"></i>
+                            <i class="fa-brands fa-google" id="google"></i>
+                            <i class="fa-brands fa-linkedin" id="linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
